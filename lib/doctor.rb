@@ -17,8 +17,10 @@ class Doctor
       appointment.doctor
     end
   end
+
+  def patients
+    appointments.collect do |patient|
+      patient.appointments
+    end
   end
-
-
-
 end
