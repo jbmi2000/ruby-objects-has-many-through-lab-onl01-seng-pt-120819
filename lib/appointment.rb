@@ -7,6 +7,7 @@ class Appointment
     # @name = name
     @date = date
     @doctor = doctor
+    @patient  = patient
     @@all << self
 
   end
@@ -14,5 +15,11 @@ class Appointment
   def self.all
     @@all
   end
+
+  # def patient
+  #   Patient.all.select do |patients|
+  #     patients.patient == self
+  #   end
+  # end
 
 end

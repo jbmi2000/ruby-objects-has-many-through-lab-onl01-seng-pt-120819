@@ -22,7 +22,11 @@ class Patient
     end
   end
 
-#  def doctors
+  def doctors
+    appointments.collect do |docs|
+      docs.doctor
+    end
+  end
 
 
 end
